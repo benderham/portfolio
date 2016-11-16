@@ -4,11 +4,10 @@ import states from './../../data'
 const notfound = {
   id: '404',
   title: 'Page Not Found',
-  image: '../spud-image.jpg',
   text: 'Page Not Found LOL'
 }
 
-class Work extends Component {
+class WorkItem extends Component {
   constructor(props) {
     super(props)
 
@@ -21,13 +20,13 @@ class Work extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="col-sm-6 col-sm-offset-4 about__text">
         <h2>{this.state.title}</h2>
+        <p>{this.state.text}</p>
       </div>
     )
   }
 }
 
-export default Work
+export default WorkItem

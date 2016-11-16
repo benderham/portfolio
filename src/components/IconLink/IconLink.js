@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class IconLink extends Component {
   render() {
     return (
-      <a href={this.props.url} target="_blank">{this.props.text}</a>
+      <a href={this.props.url} target="_blank" className={this.props.iconClass} title={this.props.text}>{this.props.text}</a>
     )
   }
 }

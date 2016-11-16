@@ -10,14 +10,15 @@ class App extends Component {
     var createItem = function(item, index) {
       return <Link
                 key={'it' + index}
-                to={'/' + item.id} >
+                to={'/work/' + item.id} >
                 {item.title}
             </Link>;
     };
+
     return (
       <div>
         <Header />
-        {states.work.map(createItem)}
+        {/* {states.work.map(createItem)} */}
         {this.props.children}
       </div>
     )
