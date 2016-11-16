@@ -10,7 +10,7 @@ class Header extends Component {
           <span>Hello.</span><br />
           I'm Ben Derham
         </h1>
-        <nav className="col-sm-2 col-sm-offset-4 header__social">
+        <nav className="col-sm-3 col-sm-offset-4 header__social">
           <IconLink url="https://www.behance.net/benb1a3" text="Behance" />
           <IconLink url="https://github.com/benderham" text="GitHub" />
           <IconLink url="http://codepen.io/benderham/" text="Codepen" />
