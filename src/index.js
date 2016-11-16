@@ -1,16 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Profile from './components/profile/Profile'
-import Portfolio from './components/portfolio/Portfolio'
-import 'normalize.css/normalize.css'
-import './css/main.css'
+import {Router, Route, browserHistory} from 'react-router'
+import About from './components/About/About'
+import Work from './components/Work/Work'
 
-ReactDOM.render(
-  <Profile />,
-  document.getElementById('profile')
-)
+import 'bootstrap-grid'
+import './styles/main.css'
 
-// ReactDOM.render(
-//   <Portfolio />,
-//   document.getElementById('portfolio')
-// )
+ReactDOM.render((
+  <Router history={browserHistory}>
+    <Route path='/' component={About} />
+    <Route path='/work' component={Work} />
+  </Router>
+), document.getElementById('root'));
